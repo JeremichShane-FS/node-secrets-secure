@@ -57,16 +57,6 @@ ENCRYPTION_KEY=your_encryption_key
 npm start
 ```
 
-## Why the dot (.) in .env?
-
-Files starting with a dot (.) are:
-
-- **Hidden files** in Unix-like systems (Linux, macOS)
-- **Convention** for configuration files
-- **Automatically ignored** by many tools
-- **Less likely** to be accidentally shared
-- **Standard practice** for environment files
-
 ## Security Benefits
 
 - ✅ Secrets are not exposed in source code
