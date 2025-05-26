@@ -73,8 +73,7 @@ If you run this application without creating a `.env` file, it will:
 2. Exit gracefully with instructions
 3. Prevent the application from starting with incomplete configuration
 
-### Step 3.7: Update package.json
-
+### Update package.json
 ```json
 {
   "name": "node-secrets-secure",
@@ -83,12 +82,11 @@ If you run this application without creating a `.env` file, it will:
   "description": "Secure Node.js application with proper secrets management",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "node app.js"
+    "start": "node --env-file=.env app.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "dotenv": "^16.0.3"
+    "express": "^4.18.2"
   }
 }
 ```
+`Note: Using the --env-file flag instead of the dotenv package.`
