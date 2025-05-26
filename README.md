@@ -72,9 +72,6 @@ If you run this application without creating a `.env` file, it will:
 1. Display error messages listing missing variables
 2. Exit gracefully with instructions
 3. Prevent the application from starting with incomplete configuration
-   ```
-
-   ```
 
 ### Step 3.7: Update package.json
 
